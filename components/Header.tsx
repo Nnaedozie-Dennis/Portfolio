@@ -18,7 +18,6 @@ export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   // const [activeSection, setActiveSection] = useState("home");
 
-
   useEffect(() => {
     if (darkMode) {
       document.documentElement.classList.add("dark");
@@ -27,21 +26,19 @@ export function Header() {
     }
   }, [darkMode]);
 
-
   return (
     <header className="fixed top-0 w-full bg-white/80 dark:bg-gray-900/80 backdrop-blur-md z-50 border-b border-gray-200 dark:border-gray-800">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+        <h1 className="text-2xl font-bold bg-linear-to-r from-emerald-500 via-teal-600 to-cyan-500 bg-clip-text text-transparent">
           NCD
         </h1>
 
-        {/* Desktop Nav */}
         <nav className="hidden md:flex gap-8">
           {navLinks.map((link) => (
             <a
               key={link.name}
               href={link.href}
-              className="hover:text-purple-600 dark:hover:text-purple-400 transition"
+              className="hover:text-teal-600 dark:hover:text-teal-400 transition"
             >
               {link.name}
             </a>
@@ -53,7 +50,11 @@ export function Header() {
             onClick={() => setDarkMode(!darkMode)}
             className="p-2 rounded-lg bg-gray-200 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-700 transition"
           >
-            {darkMode ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+            {darkMode ? (
+              <Sun className="w-5 h-5" />
+            ) : (
+              <Moon className="w-5 h-5" />
+            )}
           </button>
 
           {/* Mobile Menu Button */}
@@ -61,7 +62,11 @@ export function Header() {
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="md:hidden p-2"
           >
-            {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {mobileMenuOpen ? (
+              <X className="w-6 h-6" />
+            ) : (
+              <Menu className="w-6 h-6" />
+            )}
           </button>
         </div>
       </div>
@@ -75,7 +80,7 @@ export function Header() {
                 key={link.name}
                 href={link.href}
                 onClick={() => setMobileMenuOpen(false)}
-                className="hover:text-purple-600 dark:hover:text-purple-400 transition"
+                className="hover:text-teal-600 dark:hover:text-teal-400 transition"
               >
                 {link.name}
               </a>

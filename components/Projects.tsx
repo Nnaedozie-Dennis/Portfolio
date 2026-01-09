@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 
-
 const projects = [
   {
     title: "Notes App",
@@ -86,7 +85,6 @@ const projects = [
   },
 ];
 
-
 export function Projects() {
   const [showAll, setShowAll] = useState(false);
   const displayedProjects = showAll ? projects : projects.slice(0, 6);
@@ -115,7 +113,7 @@ export function Projects() {
                 <h3 className="text-xl sm:text-2xl font-bold mb-1 sm:mb-2">
                   {project.title}
                 </h3>
-                <h4 className="text-sm sm:text-md text-purple-600 dark:text-purple-400 font-semibold mb-2 sm:mb-3">
+                <h4 className="text-sm sm:text-md text-teal-600 dark:text-teal-400 font-semibold mb-2 sm:mb-3">
                   {project.sub}
                 </h4>
                 <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 mb-4 grow">
@@ -125,7 +123,7 @@ export function Projects() {
                   {project.tech.map((t) => (
                     <span
                       key={t}
-                      className="px-2 sm:px-3 py-1 bg-gradient-to-r from-blue-100 to-purple-100 dark:from-blue-900/50 dark:to-purple-900/50 rounded-full text-xs sm:text-sm"
+                      className="px-2 sm:px-3 py-1 bg-linear-to-r from-emerald-100 via-teal-100 to-cyan-100 dark:from-emerald-900/50 dark:via-teal-900/50 dark:to-cyan-900/50 rounded-full text-xs sm:text-sm"
                     >
                       {t}
                     </span>
@@ -136,7 +134,7 @@ export function Projects() {
                     href={project.live}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex-1 text-center py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg hover:opacity-90 transition"
+                    className="flex-1 text-center py-3 bg-linear-to-r from-emerald-500 via-teal-600 to-cyan-500 text-white rounded-lg hover:opacity-90 transition"
                   >
                     Live Demo
                   </a>
@@ -144,7 +142,7 @@ export function Projects() {
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex-1 text-center py-3 border border-purple-600 text-purple-600 dark:text-purple-400 rounded-lg hover:bg-purple-600 hover:text-white transition "
+                    className="flex-1 text-center py-3 border border-teal-600 text-teal-600 dark:text-teal-400 rounded-lg hover:bg-teal-600 hover:text-white transition "
                   >
                     GitHub
                   </a>
@@ -157,7 +155,7 @@ export function Projects() {
           <div className="flex justify-center mt-10 sm:mt-12">
             <button
               onClick={() => setShowAll(true)}
-              className="px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-medium rounded-lg hover:opacity-90 transition"
+              className="px-8 py-3 bg-linear-to-r from-emerald-500 via-teal-600 to-cyan-500 text-white font-medium rounded-lg hover:opacity-90 transition cursor-pointer"
             >
               Show More
             </button>
