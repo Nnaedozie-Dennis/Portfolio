@@ -4,16 +4,20 @@ import { useState } from "react";
 
 const projects = [
   {
+    title: "Vidora",
+    sub: "Full-Stack Movie App",
+    desc: "A full-stack movie application with authentication and persistent data, allowing users to browse, search, and manage movies securely across sessions",
+    tech: [ "Clerk", "Next.js", "TypeScript", "Rest API", "Tailwind CSS"],
+    live: "https://vidora-delta.vercel.app/",
+    github: "https://github.com/Nnaedozie-Dennis/Vidora",
+    img: "vidora.jpg",
+  },
+  {
     title: "Notes App",
     sub: "Full-Stack Note Taking App",
     desc: "A full-stack note-taking app with authentication and persistent data, allowing users to create and manage notes securely across sessions",
     tech: [
-      "Next.js",
-      "TypeScript",
-      "Node.js",
-      "Express",
-      "MongoDB",
-      "Tailwind CSS",
+      "Next.js", "TypeScript", "Node.js", "Express", "MongoDB", "Tailwind CSS",
     ],
     live: "https://note-app-six-beryl.vercel.app/",
     github: "https://github.com/Nnaedozie-Dennis/Note_App.git",
@@ -66,7 +70,7 @@ const projects = [
     img: "blaze_nation.png",
   },
   {
-    title: "todo App",
+    title: "Todo App",
     sub: "Productivity Application",
     desc: "A clean and interactive to-do application built to strengthen modern frontend skills, focusing on state handling and smooth user interactions.",
     tech: ["Next.js", "Tailwind CSS", "TypeScript", "Reponsive Design"],

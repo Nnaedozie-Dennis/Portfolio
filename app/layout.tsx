@@ -1,33 +1,4 @@
 
-// import type { Metadata } from "next";
-// import { Inter } from "next/font/google";
-// import "./globals.css";
-// import { Header } from "../components/Header";
-
-// const inter = Inter({ subsets: ["latin"] });
-
-// export const metadata: Metadata = {
-//   title: "Nnaedozie Chukwuneta Dennis | Front-End Developer & Data Analyst",
-//   description: "Innovative Front-End Developer and Data Analyst from Lagos, Nigeria.",
-// };
-
-// export default function RootLayout({
-//   children,
-// }: Readonly<{
-//   children: React.ReactNode;
-// }>) {
-//   return (
-//     <html lang="en">
-//       <body className={`${inter.className} bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors`}>
-//         <Header />
-//         {children}
-//       </body>
-//     </html>
-//   );
-// }
-
-
-
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -36,8 +7,8 @@ import { Header } from "@/components/Header";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Nnaedozie Chukwuneta Dennis | Front-End Developer & Data Analyst",
-  description: "Portfolio of Nnaedozie Dennis - Front-End Developer and Data Analyst",
+  title: "Nnaedozie Chukwuneta Dennis | Full-Stack Developer & Data Analyst",
+  description: "Portfolio of Nnaedozie Dennis -  Developer and Data Analyst",
 };
 
 export default function RootLayout({
