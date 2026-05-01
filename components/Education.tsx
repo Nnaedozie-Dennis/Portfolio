@@ -8,6 +8,17 @@ export function Education() {
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           <div className="bg-slate-800 border border-slate-700 rounded-2xl p-8 hover:border-teal-500 transition-all hover:-translate-y-2 cursor-pointer">
             <h3 className="text-xl font-bold mb-2">
+              University of the People
+            </h3>
+            <p className="text-teal-400 font-semibold mb-2">
+              Associate Degree in Computer Science{" "}
+            </p>
+            <p className="text-slate-400">
+              2025 – Present | Pasadena, California, USA
+            </p>
+          </div>
+          <div className="bg-slate-800 border border-slate-700 rounded-2xl p-8 hover:border-teal-500 transition-all hover:-translate-y-2 cursor-pointer">
+            <h3 className="text-xl font-bold mb-2">
               Nnamdi Azikiwe University
             </h3>
             <p className="text-teal-400 font-semibold mb-2">
@@ -16,13 +27,6 @@ export function Education() {
             <p className="text-slate-400">
               2019 – 2023 | Anambra State, Nigeria
             </p>
-          </div>
-          <div className="bg-slate-800 border border-slate-700 rounded-2xl p-8 hover:border-teal-500 transition-all hover:-translate-y-2 cursor-pointer">
-            <h3 className="text-xl font-bold mb-2">
-              Godfrey Okoye Secondary School
-            </h3>
-            <p className="text-teal-400 font-semibold mb-2">WAEC Certificate</p>
-            <p className="text-slate-400">2011 – 2016 | Enugu State, Nigeria</p>
           </div>
         </div>
       </div>

@@ -1,8 +1,10 @@
 
-
+"use client";
 
 
 import { Github, Linkedin, Mail, Download } from "lucide-react";
+import { ReactTyped } from "react-typed";
+
 
 export function Hero() {
   return (
@@ -17,9 +19,24 @@ export function Hero() {
             Nnaedozie Chukwuneta Dennis
           </span>
         </h1>
-        <p className="text-2xl md:text-3xl text-gray-700 dark:text-gray-300 mb-8">
+        {/* <p className="text-2xl md:text-3xl text-gray-700 dark:text-gray-300 mb-8">
           Full-Stack Developer
-        </p>
+        </p> */}
+        <div className="mb-8">
+      <ReactTyped
+        strings={[
+          "Full-Stack Developer",
+          "Data Analyst"
+        ]}
+        typeSpeed={50}
+        backSpeed={40}
+        backDelay={3500}
+        loop={true}
+        showCursor={true}
+        cursorChar="|"
+        className="text-2xl md:text-3xl text-gray-700 dark:text-gray-300 font-semibold"
+      />
+    </div>
         <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-10">
           {/* I develop full-stack web applications and apply data analysis to
           support better technical and product decisions. */}

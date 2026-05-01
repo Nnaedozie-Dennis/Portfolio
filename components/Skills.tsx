@@ -15,7 +15,8 @@ const techSkills = [
   "Express.js",
   "REST APIs",
   "MongoDB",
-  "SQL",
+  "PostgreSQL",
+  "MySQL",
   "Python",
   "Excel",
   "Power BI",
@@ -26,6 +27,12 @@ const techSkills = [
   "GitHub",
   // "UI/UX Design",
   // "Adobe Photoshop",
+  "CI/CD",
+  "Supabase",
+  "Firebase",
+  "Cloudinary",
+  "Vercel"
+
 ];
 
 const softSkills = [
@@ -50,10 +57,10 @@ export function Skills() {
           Skills
         </h2>
 
-        <div className="flex justify-center mb-10 gap-4 sm:gap-6">
+        <div className="flex justify-center mb-10 gap-4 sm:gap-6 ">
           <button
             onClick={() => setActiveTab("tech")}
-            className={`px-8 py-3 rounded-lg font-medium transition ${
+            className={`px-8 py-3 rounded-lg cursor-pointer font-medium transition ${
               activeTab === "tech"
                 ? "bg-linear-to-r from-emerald-500 via-teal-600 to-cyan-500 text-white"
                 : "bg-gray-200 dark:bg-gray-800"
@@ -63,7 +70,7 @@ export function Skills() {
           </button>
           <button
             onClick={() => setActiveTab("soft")}
-            className={`px-8 py-3 rounded-lg font-medium transition ${
+            className={`px-8 py-3 rounded-lg cursor-pointer font-medium transition ${
               activeTab === "soft"
                 ? "bg-linear-to-r from-emerald-500 via-teal-600 to-cyan-500 text-white"
                 : "bg-gray-200 dark:bg-gray-800"

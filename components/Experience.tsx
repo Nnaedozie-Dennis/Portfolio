@@ -2,7 +2,7 @@ const experience = [
   {
     title: "Meteorological Observer",
     company:
-      "Murtala Mohammed International Airport – Observatory Department, NIMET",
+      "Murtala Mohammed International Airport, Lagos – Observatory Department, NIMET",
     period: "2024 – Present",
     responsibilities: [
       "Conduct real-time weather observations to support aviation safety and climate research",

@@ -46,7 +46,7 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-4">
-          <button
+          {/* <button
             onClick={() => setDarkMode(!darkMode)}
             className="p-2 rounded-lg bg-gray-200 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-700 transition"
           >
@@ -55,7 +55,7 @@ export function Header() {
             ) : (
               <Moon className="w-5 h-5" />
             )}
-          </button>
+          </button> */}
 
           {/* Mobile Menu Button */}
           <button
